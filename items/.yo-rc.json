@@ -1,0 +1,48 @@
+{
+  "generator-jhipster": {
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "serverPort": "8081",
+    "serviceDiscoveryType": "eureka",
+    "skipUserManagement": true,
+    "baseName": "items",
+    "buildTool": "maven",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": ["en", "fr"],
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "skipClient": true,
+    "testFrameworks": [],
+    "websocket": false,
+    "applicationType": "microservice",
+    "packageName": "com.adrianbadarau.klist.items",
+    "packageFolder": "com/adrianbadarau/klist/items",
+    "jhipsterVersion": "6.10.5",
+    "creationTimestamp": 1614193500382,
+    "clientPackageManager": "npm",
+    "jwtSecretKey": "ODUyOTlhMzMwOTMwY2E3MDAxZjc4ZTQxYzcwNjU3MDQxMWYxMzkxYThmMDMxMTcwODQyNjc0ZTNlYmU5NGNmYzYzOWQyMTlmNzA1N2M2ZjVmOGIyNjIxMjk4YmM4NDBmZWVhMjlmMDk1NmFiOWVlOWFkMWIwN2E2N2NiM2IwNGY=",
+    "embeddableLaunchScript": false,
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.11.0"
+      }
+    ],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.11.0"
+      }
+    ]
+  },
+  "entities": ["List", "Item", "Recipe"]
+}

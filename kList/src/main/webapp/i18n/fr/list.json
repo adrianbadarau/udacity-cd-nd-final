@@ -1,0 +1,24 @@
+{
+  "kListApp": {
+    "list": {
+      "home": {
+        "title": "Lists",
+        "createLabel": "Créer un nouveau List",
+        "createOrEditLabel": "Créer ou éditer un List",
+        "notFound": "Aucun List trouvé"
+      },
+      "created": "Un nouveau List a été créé avec l'identifiant {{ param }}",
+      "updated": "Le List avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le List avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le List {{ id }} ?"
+      },
+      "detail": {
+        "title": "List"
+      },
+      "name": "Name",
+      "item": "Item",
+      "recipe": "Recipe"
+    }
+  }
+}

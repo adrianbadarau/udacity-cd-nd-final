@@ -1,0 +1,42 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="recipe">
+            <h2><span jhiTranslate="kListApp.recipe.detail.title">Recipe</span> {{ recipe.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="kListApp.recipe.name">Name</span></dt>
+                <dd>
+                    <span>{{ recipe.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="kListApp.recipe.list">List</span></dt>
+                <dd>
+                    <div *ngIf="recipe.list">
+                        <a [routerLink]="['/list', recipe.list?.id, 'view']">{{ recipe.list?.id }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="kListApp.recipe.item">Item</span></dt>
+                <dd>
+                    <div *ngIf="recipe.item">
+                        <a [routerLink]="['/item', recipe.item?.id, 'view']">{{ recipe.item?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/recipe', recipe.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

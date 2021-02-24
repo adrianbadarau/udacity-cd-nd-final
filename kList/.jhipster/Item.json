@@ -1,0 +1,54 @@
+{
+  "name": "Item",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "qty",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "unit",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inCart",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "image",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "recipe",
+      "otherEntityRelationshipName": "item",
+      "relationshipName": "recipe"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "list",
+      "otherEntityRelationshipName": "item",
+      "relationshipName": "list",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210224190715",
+  "entityTableName": "item",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["kList", "items"]
+}

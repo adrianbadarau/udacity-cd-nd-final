@@ -1,0 +1,53 @@
+{
+  "generator-jhipster": {
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "clientFramework": "angularX",
+    "serverPort": "8080",
+    "serviceDiscoveryType": "eureka",
+    "skipUserManagement": false,
+    "baseName": "kList",
+    "buildTool": "maven",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": ["en", "fr"],
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "skipClient": false,
+    "testFrameworks": [],
+    "websocket": false,
+    "applicationType": "gateway",
+    "packageName": "com.adrianbadarau.klist.front_end",
+    "packageFolder": "com/adrianbadarau/klist/front_end",
+    "jhipsterVersion": "6.10.5",
+    "creationTimestamp": 1614193500382,
+    "skipServer": false,
+    "clientPackageManager": "npm",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "useSass": true,
+    "jwtSecretKey": "NGQzOWY5MmIyZWZiYmI5MDdiODAyZGM0ODQ1NmRiYzQ5YzRiYzM0YmMwNDg5NjUwZGNmMTZkODg3MGFlNzU3MDllNDE2NzJjMDBiZWQ3MTJhMGQyMjIwYjY3Yzk1NWY0MmZkZmM0MTI1NTA2ZGMzNjVkMGQ5Njg0NTFhNWJmYTA=",
+    "embeddableLaunchScript": false,
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.11.0"
+      }
+    ],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.11.0"
+      }
+    ]
+  },
+  "entities": ["List", "Item", "Recipe", "Notification"]
+}

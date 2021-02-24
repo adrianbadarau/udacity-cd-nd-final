@@ -1,0 +1,49 @@
+{
+  "generator-jhipster": {
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "serverPort": "8081",
+    "serviceDiscoveryType": "eureka",
+    "skipUserManagement": true,
+    "baseName": "notifications",
+    "buildTool": "maven",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": ["en", "fr"],
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "skipClient": true,
+    "testFrameworks": [],
+    "websocket": false,
+    "applicationType": "microservice",
+    "packageName": "com.adrianbadarau.klist.notifications",
+    "packageFolder": "com/adrianbadarau/klist/notifications",
+    "reactive": true,
+    "jhipsterVersion": "6.10.5",
+    "creationTimestamp": 1614193500382,
+    "clientPackageManager": "npm",
+    "jwtSecretKey": "NWRiMzRjOWFkZDNiNWQ2NmI2NjE5ZmQ5NmM5YmI0ZjE5ZDNjNjMzNjczMTJiOWZlZmQyZTBlY2Y3ZTkzMDBjM2UyZjM0MmQ5MDM2ZmJlZTg4MWUxOTRlMGU2YmM3ZGQ3MTdjMWY2NjNiNDhiYjIxYjBhMmFjZTM4MDMxZjc0ZmE=",
+    "embeddableLaunchScript": false,
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.11.0"
+      }
+    ],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.11.0"
+      }
+    ]
+  },
+  "entities": ["Notification"]
+}

@@ -1,0 +1,62 @@
+
+application {
+  config {
+    baseName kList,
+    applicationType gateway,
+    packageName com.adrianbadarau.klist.front_end,
+    authenticationType jwt,
+    databaseType mongodb,
+    clientFramework angularX
+  }
+  entities *
+}
+
+application {
+  config {
+    baseName items,
+    applicationType microservice,
+    packageName com.adrianbadarau.klist.items,
+    authenticationType jwt,
+    databaseType mongodb
+  }
+  entities List, Item, Recipe
+}
+
+application {
+  config {
+    baseName notifications,
+    applicationType microservice,
+    packageName com.adrianbadarau.klist.notifications,
+    authenticationType jwt,
+    databaseType mongodb
+    reactive true
+  }
+  entities Notification
+}
+
+entity List {
+	name String	
+}
+
+entity Item {
+	name String required
+    qty Integer
+    unit String
+    inCart Boolean required
+    image ImageBlob
+}
+
+entity Recipe {
+	name String required
+}
+
+entity Notification {
+	body String required
+}
+
+relationship OneToMany {
+  List to Item
+  List to Recipe
+  Item to Recipe
+}
+    
