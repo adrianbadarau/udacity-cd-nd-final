@@ -31,7 +31,7 @@ before_install:
       java -version
     fi
   - java -version
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
   - docker-compose -f docker/mongodb.yml up -d
 script:
   - chmod +x /items/mvnw
