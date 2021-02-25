@@ -345,7 +345,7 @@
         <testSourceDirectory>src/test/kotlin</testSourceDirectory>
 
         <plugins>
-            
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
@@ -419,7 +419,7 @@
                                     <artifactId>mapstruct-processor</artifactId>
                                     <version>${mapstruct.version}</version>
                                 </path>
-                                
+
                             </annotationProcessorPaths>
                         </configuration>
                     </execution>
@@ -466,7 +466,7 @@
                         <artifactId>kotlin-maven-allopen</artifactId>
                         <version>${kotlin.version}</version>
                     </dependency>
-                    
+
                 </dependencies>
             </plugin>
             <plugin>
@@ -740,6 +740,10 @@
                         </from>
                         <to>
                             <image>items:latest</image>
+                            <auth>
+                                <username>${env.DOCKER_USERNAME}</username>
+                                <password>${env.DOCKER_PASSWORD}</password>
+                            </auth>
                         </to>
                         <container>
                             <entrypoint>
