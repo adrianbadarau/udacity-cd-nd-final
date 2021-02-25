@@ -33,12 +33,6 @@ before_install:
   - java -version
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker-compose -f docker/mongodb.yml up -d
-script:
-  - ls
-  - chmod +x items/mvnw
-  - cd items && ./mvnw -ntp checkstyle:check
-  - cd items && ./mvnw -ntp clean verify
-#  - cd items && ./mvnw -ntp verify -Pprod jib:dockerBuild
 install:
   - chmod +x items/mvnw
   - cd items && ./mvnw -ntp verify -Pprod jib:dockerBuild
