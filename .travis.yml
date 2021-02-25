@@ -39,4 +39,5 @@ script:
   - cd items && ./mvnw -ntp clean verify
 #  - cd items && ./mvnw -ntp verify -Pprod jib:dockerBuild
 install:
+  - chmod +x /items/mvnw
   - cd items && ./mvnw -ntp verify -Pprod jib:dockerBuild
