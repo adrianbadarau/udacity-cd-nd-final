@@ -739,7 +739,7 @@
                             <image>adoptopenjdk:11-jre-hotspot</image>
                         </from>
                         <to>
-                            <image>items:latest</image>
+                            <image>adrianbadarau/udacity_cd_nd_final_items:latest</image>
                             <auth>
                                 <username>${env.DOCKER_USERNAME}</username>
                                 <password>${env.DOCKER_PASSWORD}</password>
