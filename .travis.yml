@@ -36,7 +36,7 @@ before_install:
 install:
   - chmod +x items/mvnw
   - cd items && ./mvnw -ntp verify -Pprod jib:dockerBuild
-  - cd klist && ./mvnw -ntp verify -Pprod jib:dockerBuild
+  - cd kList && ./mvnw -ntp verify -Pprod jib:dockerBuild
   - cd notifications && ./mvnw -ntp verify -Pprod jib:dockerBuild
   - docker push adrianbadarau/udacity_cd_nd_final_notifications:latest
   - docker push adrianbadarau/udacity_cd_nd_final_kilst:latest
