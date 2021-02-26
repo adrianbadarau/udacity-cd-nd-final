@@ -44,5 +44,5 @@ install:
   - cd notifications && ./mvnw -ntp verify -Pprod jib:dockerBuild
   - cd ..
   - docker push adrianbadarau/udacity_cd_nd_final_notifications:latest
-  - docker push adrianbadarau/udacity_cd_nd_final_kilst:latest
+  - docker push adrianbadarau/udacity_cd_nd_final_klist:latest
   - docker push adrianbadarau/udacity_cd_nd_final_items:latest
